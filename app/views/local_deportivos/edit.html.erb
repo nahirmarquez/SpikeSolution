@@ -1,0 +1,21 @@
+<div data-role="page" id="home" data-title="Home">
+    <div data-role="header" data-position="inline" data-theme="a">
+	</div><!-- /header -->
+    <div data-role="content">
+
+<ul data-role="listview" data-inset="true">
+<li data-role="list-divider"><h1>Editar Local Deportivo</h1></li>
+<li>
+<%= render 'form' %>
+</li>
+</ul>
+    </div><!-- /content -->
+ 
+    <div data-role="footer" data-position="fixed">
+
+<%= link_to 'Mostrar', @local_deportivo %> |
+<%= link_to 'Eliminar', @local_deportivo, confirm: '¿Está seguro que desea eliminar el local deportivo?', method: :delete %> |
+<%= link_to 'Regresar', local_deportivos_path %>
+
+    </div><!-- /footer -->
+</div><!-- /page home -->

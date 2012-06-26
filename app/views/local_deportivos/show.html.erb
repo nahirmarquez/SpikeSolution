@@ -1,0 +1,64 @@
+<div data-role="page" id="home" data-title="Home">
+    <div data-role="header" data-position="inline" data-theme="a">
+<p id="notice"><%= notice %></p>
+	</div><!-- /header -->
+    <div data-role="content">
+<ul data-role="listview" data-inset="true">
+<li data-role="list-divider">Datos del Local Deportivo</li>
+<li>
+	<p>
+	  <b>Nombre:</b>
+	  <%= @local_deportivo.nombre %>
+	</p>
+</li>
+<li>
+	<p>
+	  <b>Direccion:</b>
+	  <%= @local_deportivo.direccion %>
+	</p>	
+</li>
+<li>
+	<p>
+	  <b>Descripcion:</b>
+	  <%= @local_deportivo.descripcion %>
+	</p>
+</li>
+<li>
+	<p>
+	  <b>Servicios:</b>
+	  <%= @local_deportivo.servicios %>
+	</p>	
+</li>
+<li>
+	<p>
+	  <b>Contacto:</b>
+	  <%= @local_deportivo.contacto %>
+	</p>
+</li>
+<li>
+	<p>
+	  <b>Telefono:</b>
+	  <%= @local_deportivo.telefono %>
+	</p>	
+</li>
+<li>
+	<p>
+	  <b>Email:</b>
+	  <%= @local_deportivo.email %>
+	</p>	
+</li>
+</ul>
+
+
+
+
+    </div><!-- /content -->
+ 
+    <div data-role="footer" data-position="fixed">
+
+<%= link_to 'Editar', edit_local_deportivo_path(@local_deportivo) %> |
+<%= link_to 'Regresar', local_deportivos_path %>
+
+
+    </div><!-- /footer -->
+</div><!-- /page home -->
